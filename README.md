@@ -113,12 +113,12 @@ RETURNING *;
       * The users email will be send on the request url as a **query**. Example: `?userEmail=[user email]`
 
 8. Use the *above* endpoint to also handle the query `?userFirstStart=[letters]` to get all **vehicles** for any user whose first name starts with the provided letters.
-
+;
 9. Create an endpoint at `GET '/api/newervehiclesbyyear'` that gets all **vehicles** newer than 2000 and sorted by year with the newest car first. Include the owner's name from the users table.
 
 10. Create an endpoint at `PUT '/api/vehicle/:vehicleId/user/:userId'` that changes the ownership of the provided vehicle using the new owner's user id (`userId param`).
       * Use the  `RETURNING` clause to return the updated vehicle information.
-
+;
 11. Create an endpoint at `DELETE '/api/user/:userId/vehicle/:vehicleId'` that removes ownership of that vehicle from the provided user, but does not delete the vehicle.
       * Use the  `RETURNING` clause to return the updated vehicle information.
 
